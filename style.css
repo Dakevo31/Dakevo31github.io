@@ -1,0 +1,131 @@
+body {
+    background-color: #0c0505;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Add a background image to the body */
+body {
+    background-image: url('background1.jpg'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background fixed when scrolling */
+    color: white; /* Adjust text color to contrast with the background */
+}
+
+.logo {
+    width: 200px; /* Adjust the logo size as necessary */
+    height: auto; /* Maintains the logo's aspect ratio */
+}
+.logo-text {
+    font-family: Fantasy; /* Set the font to Fantasy */
+    color: #f6f6f8; /* Text color for contrast */
+    font-size: 175%; /* Font size for the text */
+    margin-top: 5px; /* Space above the text */
+    margin-bottom: 10px; /* Space below the text */
+}
+.container {
+    margin-top:25px;
+    padding: 20px;
+    background-color: #070707;
+    box-shadow: 0 10px 20px rgba(230, 247, 247, 0.1);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: Fantasy; /* Set the font to Fantasy */
+    color: #f6f8f6;
+    font-size: 2em;
+}
+
+/* Styling for images */
+.featured-image {
+    width: 100%; /* Set width to 100% to ensure it scales with the container */
+    max-width: 200px; /* Default max width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto;
+    display: block; /* Center the image */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+}
+
+/* Button styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Password style */
+#passwordDisplay {
+    font-size: 25px;
+    color: white; /* Cambia el color del texto a blanco */
+    background-color: #333; /* Fondo oscuro para mayor contraste */
+    padding: 15px;
+    padding-top: 25px;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#copyButton {
+    background-color: #ff5722;
+}
+
+#copyButton:hover {
+    background-color: #e64a19;
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Copied message styling */
+#copyMessage {
+    color: red !important; /* Ensure red color is applied */
+    font-style: italic;
+}
+
+/* Adjustments for small screens (mobile) */
+@media only screen and (max-width: 768px) {
+    .featured-image {
+        max-width: 100%; /* Ensure the image takes full width on smaller screens */
+    }
+
+    /* Ensure the container is aligned properly if the image gets misaligned */
+    .container {
+        width: 95%; /* Increase the width on mobile devices */
+        margin-top: 100px; /* Adjust the top margin if necessary */
+    }
+
+/* Social media container */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Social media icon styling */
+.social-icon img {
+    width: 10px;  /* Set icon width */
+    height: 10px; /* Set icon height */
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icon:hover img {
+    transform: scale(1.1); /* Enlarge icon on hover */
+}
+
